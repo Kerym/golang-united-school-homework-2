@@ -7,9 +7,9 @@ import(
 type SidesN int
 
 const (
-	SidesTriangle = 3
-	SidesSquare = 4
-	SidesCircle = 0
+	SidesTriangle SidesN = 3
+	SidesSquare SidesN = 4
+	SidesCircle SidesN = 0
 )
 
 func CalcSquare(sideLen float64, sidesNum SidesN) float64 {
