@@ -1,6 +1,6 @@
 package square
 
-import(
+import (
 	"math"
 	// "fmt"
 ) 
