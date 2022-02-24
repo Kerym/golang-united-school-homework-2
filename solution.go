@@ -3,18 +3,19 @@ package square
 import (
 	"math"
 	// "fmt"
-) 
+)
+
 type SidesN int
 
 const (
 	SidesTriangle SidesN = 3
-	SidesSquare SidesN = 4
-	SidesCircle SidesN = 0
+	SidesSquare   SidesN = 4
+	SidesCircle   SidesN = 0
 )
 
 func CalcSquare(sideLen float64, sidesNum SidesN) float64 {
 	if sidesNum == SidesTriangle {
-		return (math.Pow(sideLen, 3))
+		return (math.Sqrt(3) / 4 * math.Pow(sideLen, 2))
 	} else if sidesNum == SidesSquare {
 		return (math.Pow(sideLen, 2))
 	} else if sidesNum == SidesCircle {
